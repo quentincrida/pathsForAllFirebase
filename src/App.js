@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// import firebase from './firebase';
+import ExercisesList from './components/exercises-list';
+import AddExerciseEntryForm from './components/add-exercise-entry-form.jsx';
+
+// firebase.firestore().collection('exercises').add({
+//   title: 'Toe lifts',
+//   duration: 45
+// })
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Paths For All</h1>
+      <ExercisesList/>
+      <AddExerciseEntryForm/>
     </div>
   );
 }
